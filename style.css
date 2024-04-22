@@ -1,14 +1,60 @@
-ul {
-  list-style: none;
+body {
   margin: 0px;
   padding: 0px;
+  background: rgb(26, 25, 25);
   display: flex;
-  gap: 20px;
+  justify-content: center;
 }
 
-a {
-  text-decoration: none;
-  background: #eee;
-  padding: 10px 20px;
-  display: block;
+.conteudo {
+  width: 300px;
+  height: 600px;
+  border-radius: 8px;
+  padding: 20px;
+  background: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+.nome {
+  color: rgb(230, 229, 229);
+}
+
+.nome h3 {
+  color: rgb(164, 250, 5);
+  font-size: 12px;
+  text-align: center;
+}
+
+.descricao {
+  color: rgb(230, 229, 229);
+}
+
+.conteudo-lista {
+  width: 250px;
+}
+
+.lista {
+  list-style: none;
+  width: 250px;
+  padding: 0px;
+}
+
+.lista li {
+  background: rgb(77, 76, 76);
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 0px;
 }
