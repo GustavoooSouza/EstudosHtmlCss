@@ -1,62 +1,52 @@
 body {
-  margin: 0px;
   padding: 0px;
-  background: rgb(26, 25, 25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0px;
+  background: rgb(236, 227, 139);
   height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
 }
 
 .conteudo {
-  width: 300px;
-  height: 600px;
-  border-radius: 8px;
-  padding: 20px;
-  background: rgb(34, 34, 34);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imagem {
   border: 2px solid white;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  text-align: center;
+  width: 600px;
+  grid: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 30px;
 }
 
-.nome {
-  color: rgb(230, 229, 229);
+.img-comida {
+  width: 93%;
+  height: 400px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 16px;
 }
 
-.nome h3 {
-  color: rgb(164, 250, 5);
-  font-size: 12px;
-  text-align: center;
+.titulo h1 {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.descricao {
-  color: rgb(230, 229, 229);
+.titulo p {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.conteudo-lista {
-  width: 250px;
+.preparo {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgb(238, 202, 202);
+  color: rgb(187, 81, 131);
 }
 
-.lista {
-  list-style: none;
-  width: 250px;
-  padding: 0px;
-}
-
-.lista li {
-  background: rgb(77, 76, 76);
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: center;
-  border-radius: 4px;
-  color: white;
-  padding: 10px 0px;
+ul {
+  background: rgb(238, 202, 202);
 }
