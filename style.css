@@ -1,92 +1,75 @@
-body {
-  background: rgb(252, 228, 148);
+main {
+  background: rgb(243, 211, 76);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 100px;
+  height: 100vh;
 }
 
-article {
-  width: 800px;
+body {
+  background: rgb(243, 211, 76);
+}
+
+.card {
   background: white;
-  border-radius: 16px;
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 14px;
+  width: 376px;
+  box-shadow: 10px 10px black;
 }
 
 .imagem {
-  padding: 45px;
-  text-align: center;
-}
-.imagem-comida {
-  max-width: 100%;
-  border-radius: 16px;
+  padding: 20px;
 }
 
-h1 {
-  padding: 0px 45px;
-  margin: 0px;
-  font-size: 40px;
+.imagem img {
+  border-radius: 14px;
 }
 
-p {
-  font-size: 18px;
-  color: rgb(94, 56, 56);
-  padding: 0px 45px;
-}
-
-.preparacao {
-  margin: 0px 45px;
-  padding: 20px 40px;
-  background: rgb(248, 233, 248);
-  border-radius: 16px;
+.aprendendo {
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
 }
 
 h3 {
-  color: rgb(168, 16, 168);
-}
-
-ul {
-  color: rgb(94, 56, 56);
-  font-size: 15px;
-}
-
-.ingredientes {
-  margin: 0px 45px;
-  border-bottom: 2px solid rgb(194, 191, 191);
-}
-
-h2 {
-  color: rgb(104, 54, 54);
-}
-
-.instrucao {
-  margin: 0px 45px;
-  border-bottom: 2px solid rgb(194, 191, 191);
-}
-
-ol {
-  color: rgb(94, 56, 56);
-  font-size: 15px;
-}
-
-.nutricao-descricao {
-  color: rgb(94, 56, 56);
-  font-size: 16px;
+  background: rgb(243, 211, 76);
+  margin: 0px;
+  padding: 10px;
   display: inline-block;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.nutricao {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+p {
+  margin: 10px 0px;
 }
 
-.nutricao-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 2px solid rgb(194, 191, 191);
+.titulo {
+  padding: 0px 20px;
 }
 
-.nutri {
-  margin: 0px 45px;
-  padding-bottom: 45px;
+h1 {
+  margin: 0px;
+}
+
+.legenda {
+  color: gray;
+}
+
+.autor {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.imagem-usuario {
+  width: 32px;
+  height: 32px;
+}
+
+span {
+  padding-left: 10px;
 }
