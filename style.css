@@ -1,52 +1,92 @@
 body {
-  padding: 0px;
-  margin: 0px;
-  background: rgb(236, 227, 139);
-  height: 100vh;
-  display: grid;
-  justify-items: center;
-  align-content: center;
-}
-
-.conteudo {
-  border: 2px solid white;
-  width: 600px;
-  grid: flex;
+  background: rgb(252, 228, 148);
+  display: flex;
   flex-direction: column;
-  background: white;
-  border-radius: 30px;
+  align-items: center;
+  padding: 100px;
 }
 
-.img-comida {
-  width: 93%;
-  height: 400px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+article {
+  width: 800px;
+  background: white;
   border-radius: 16px;
 }
 
-.titulo h1 {
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
+.imagem {
+  padding: 45px;
+  text-align: center;
+}
+.imagem-comida {
+  max-width: 100%;
+  border-radius: 16px;
 }
 
-.titulo p {
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
+h1 {
+  padding: 0px 45px;
+  margin: 0px;
+  font-size: 40px;
 }
 
-.preparo {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background: rgb(238, 202, 202);
-  color: rgb(187, 81, 131);
+p {
+  font-size: 18px;
+  color: rgb(94, 56, 56);
+  padding: 0px 45px;
+}
+
+.preparacao {
+  margin: 0px 45px;
+  padding: 20px 40px;
+  background: rgb(248, 233, 248);
+  border-radius: 16px;
+}
+
+h3 {
+  color: rgb(168, 16, 168);
 }
 
 ul {
-  background: rgb(238, 202, 202);
+  color: rgb(94, 56, 56);
+  font-size: 15px;
+}
+
+.ingredientes {
+  margin: 0px 45px;
+  border-bottom: 2px solid rgb(194, 191, 191);
+}
+
+h2 {
+  color: rgb(104, 54, 54);
+}
+
+.instrucao {
+  margin: 0px 45px;
+  border-bottom: 2px solid rgb(194, 191, 191);
+}
+
+ol {
+  color: rgb(94, 56, 56);
+  font-size: 15px;
+}
+
+.nutricao-descricao {
+  color: rgb(94, 56, 56);
+  font-size: 16px;
+  display: inline-block;
+}
+
+.nutricao {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.nutricao-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid rgb(194, 191, 191);
+}
+
+.nutri {
+  margin: 0px 45px;
+  padding-bottom: 45px;
 }
