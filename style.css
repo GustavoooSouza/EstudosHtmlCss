@@ -1,75 +1,98 @@
-main {
-  background: rgb(243, 211, 76);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+html {
+  height: 100%;
 }
 
 body {
-  background: rgb(243, 211, 76);
+  background: rgb(217, 217, 255);
+  background-image: url("/img/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
-.card {
+.conteudo {
+  border-radius: 18px;
   background: white;
-  display: inline-block;
-  border: 1px solid gray;
-  border-radius: 14px;
-  width: 376px;
-  box-shadow: 10px 10px black;
-}
-
-.imagem {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .imagem img {
-  border-radius: 14px;
-}
-
-.aprendendo {
-  padding: 20px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-}
-
-h3 {
-  background: rgb(243, 211, 76);
-  margin: 0px;
-  padding: 10px;
-  display: inline-block;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-p {
-  margin: 10px 0px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .titulo {
-  padding: 0px 20px;
+  width: 350px;
+  margin: 10px 0px;
 }
 
 h1 {
-  margin: 0px;
+  text-align: center;
 }
 
-.legenda {
+.titulo p {
+  text-align: center;
+  font-size: 1rem;
   color: gray;
 }
 
-.autor {
+.comprar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
   padding: 20px;
+  background: hsl(225, 100%, 98%);
+  border-radius: 16px;
+}
+
+.musica-icone {
+  text-align: left;
+}
+
+.preco {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.preco .valor {
+  color: gray;
+}
+
+.botao {
+  text-align: right;
+  display: flex;
+  justify-content: end;
   align-items: center;
 }
 
-.imagem-usuario {
-  width: 32px;
-  height: 32px;
+.botao-comprar {
+  width: 350px;
+  padding: 10px 20px;
+  background: rgb(18, 18, 253);
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-weight: bold;
 }
 
-span {
-  padding-left: 10px;
+.botao-cancelar {
+  width: 350px;
+  padding: 10px 20px;
+  color: gray;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
 }
