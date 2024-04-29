@@ -1,98 +1,73 @@
-html {
-  height: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  background: rgb(217, 217, 255);
-  background-image: url("/img/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.conteudo {
-  border-radius: 18px;
-  background: white;
+.resultado {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.imagem img {
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-}
-
-.titulo {
   width: 350px;
-  margin: 10px 0px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-h1 {
-  text-align: center;
-}
-
-.titulo p {
-  text-align: center;
-  font-size: 1rem;
-  color: gray;
-}
-
-.comprar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  padding: 20px;
-  background: hsl(225, 100%, 98%);
-  border-radius: 16px;
-}
-
-.musica-icone {
-  text-align: left;
-}
-
-.preco {
+.msg-resultado {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   justify-content: center;
-}
-
-.preco .valor {
-  color: gray;
-}
-
-.botao {
-  text-align: right;
-  display: flex;
-  justify-content: end;
   align-items: center;
+  color: rgb(172, 172, 172);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.botao-comprar {
-  width: 350px;
-  padding: 10px 20px;
-  background: rgb(18, 18, 253);
+.numero-pontuacao {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.acertos-total {
+  margin: 0px;
   color: white;
-  font-size: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  margin-top: 25px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
-.botao-cancelar {
-  width: 350px;
-  padding: 10px 20px;
-  color: gray;
+.acertos {
+  margin: 0px;
+  font-size: 0.9rem;
+  color: rgb(173, 173, 173);
+}
+
+.msg-pontuacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.msg {
+  width: 220px;
+  margin: 0px;
+  margin-bottom: 40px;
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-weight: bold;
+  color: rgb(173, 173, 173);
 }
