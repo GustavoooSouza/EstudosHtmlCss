@@ -220,3 +220,14 @@ a {
   background: hsl(224, 30%, 27%);
   border-radius: 50px;
 }
+
+@media (max-width: 375px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .resultado {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
