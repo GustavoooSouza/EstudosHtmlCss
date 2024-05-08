@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: hsl(30, 38%, 92%);
+  min-height: 100%;
 }
 
 .conteudo {
@@ -12,6 +17,7 @@ body {
   grid-template-columns: 300px 300px;
   background: white;
   border-radius: 8px;
+  margin: 0 auto;
 }
 
 .img img {
@@ -69,6 +75,7 @@ body {
   background: hsl(158, 36%, 37%);
   padding: 15px 15px;
   border-radius: 8px;
+  position: relative;
 }
 
 .botao a {
@@ -83,6 +90,16 @@ body {
 
 .botao a::before {
   content: "";
-  display: inline-block;
-  background-image: url("/img/icon-cart.svg");
+  display: block;
+  background: url("/img/icon-cart.svg");
+  position: absolute;
+  width: 15px;
+  height: 16px;
+  left: 50px;
+}
+
+@media (max-width: 375px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
 }
